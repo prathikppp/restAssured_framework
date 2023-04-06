@@ -13,13 +13,12 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.poi.ss.usermodel.DataFormatter;
 
-
 public class getData {
-    public static ArrayList<String> getdataExcel(String testSheetName, String testCaseName) throws IOException 
+    public static ArrayList<String> getdataExcel(String testSheetName, String testCaseName) throws IOException
     {
     	ArrayList<String> arraydata =new ArrayList<String>();
         //step 1 :- to locate the file by creating object of file input stream
-        FileInputStream fis = new FileInputStream("C:\\Users\\admin\\Documents\\test_data.xlsx");
+        FileInputStream fis = new FileInputStream("C:\\Users\\admin\\Documents\\data_RA.xlsx"); 
 
         //create the object of XSSFWorkbook to open the excel file
         XSSFWorkbook workbook = new XSSFWorkbook(fis);
@@ -67,39 +66,8 @@ public class getData {
                         Iterator<Cell> cellvaluedata = datarow.cellIterator();
                         while(cellvaluedata.hasNext())
                         {
-                        	Cell dataofcell = cellvaluedata.next(); 
-                        	//method 1 : try and catch method
-//                        	try 
-//                        	{
-//                        		String testdata = dataofcell.getStringCellValue();
-//                        		arraydata.add(testdata);
-//                        	}
-//                        	catch (IllegalStateException e)
-//                        	{
-//                        		int inttestData = (int) dataofcell.getNumericCellValue();
-//                        		String stringtestData= Integer.toString(inttestData);
-//                        		arraydata.add(stringtestData);
-//                        	}
-                        	
-                        	//method 2 :- using cell and celltype with If-else statement
-//                            if(dataofcell.getCellType() == CellType.STRING)
-//                            {
-//                                String testdata = dataofcell.getStringCellValue();
-//                                System.out.println(testdata);
-//                                arraydata.add(testdata);                                
-//                            }
-//                            else if(dataofcell.getCellType() == CellType.NUMERIC)
-//                            {
-//                                int testdata = (int) dataofcell.getNumericCellValue();
-//                                String stringtestData= Integer.toString(testdata);
-//                                                              
-//                            }
-                        	
-                        	 //Method 3 -- Extract the data by converting it into String
-                        	
-//                        	 String testData =cellvaluedata.next().toString().replaceAll("\\.\\d+$", "");//                        	
-//                        	 arraydata.add(testData); 
-                        	
+                        	Cell dataofcell = cellvaluedata.next();
+                    	
                              //Method 4-- Extract the data by using Dataformatter
                         	
                         	 DataFormatter format =new DataFormatter();

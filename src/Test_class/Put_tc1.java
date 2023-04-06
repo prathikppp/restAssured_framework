@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import Common_method.commonMethod_put_API;
 import Common_method.commonMethodUtility;
@@ -13,6 +14,7 @@ import io.restassured.path.json.JsonPath;
 import Req_repository.Put_req_repository;
 
 public class Put_tc1 {
+	@Test
 	public static void orchestrator() throws IOException
 	{
 		String resbody="";
@@ -49,19 +51,19 @@ public class Put_tc1 {
 	{
 		JsonPath jsp =new JsonPath(resbody);
 //		// extract parameters
-//		String res_name =jsp.getString("name");
-//		String res_job=jsp.getString("job");
-//		String res_id = jsp.getString("id");
-//		String create_date= jsp.getString("updatedAt");
-//		String acc_date=create_date.substring(0, 10);
-//		String curr_date = LocalDate.now().toString();
-//		System.out.println("NAME: " +res_name + " \nJOB : " + res_job + "\nID : " + res_id +
-//				"\ncreatedAt : " + acc_date);
+		String res_name =jsp.getString("name");
+		String res_job=jsp.getString("job");
+		String res_id = jsp.getString("id");
+		String create_date= jsp.getString("updatedAt");
+		String acc_date=create_date.substring(0, 10);
+		String curr_date = LocalDate.now().toString();
+		System.out.println("NAME: " +res_name + " \nJOB : " + res_job + "\nID : " + res_id +
+				"\ncreatedAt : " + acc_date);
 //		//validate rwsbody paramters 
-//		Assert.assertEquals(res_name, "Rajan");
-//		Assert.assertEquals(res_job, "QA");
-//		Assert.assertNotEquals(res_id, 0);
-//		Assert.assertEquals(acc_date, curr_date);
+		Assert.assertEquals(res_name, "Rajan");
+		Assert.assertEquals(res_job, "QA");
+		Assert.assertNotEquals(res_id, 0);
+		Assert.assertEquals(acc_date, curr_date);
 		
 			
 	}

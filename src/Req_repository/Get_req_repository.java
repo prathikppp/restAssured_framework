@@ -9,8 +9,7 @@ public class Get_req_repository {
 	public static String resource()
 	{
 		String resource="api/users?page=2";
-		return resource;
-		
+		return resource;		
 	}
 
 }

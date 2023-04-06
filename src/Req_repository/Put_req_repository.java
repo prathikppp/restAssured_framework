@@ -19,7 +19,7 @@ public class Put_req_repository {
 	}
 	public static String post_req_tc1( ) throws IOException 
 	{
-		ArrayList<String> data = getData.getdataExcel("put_data", "tc3");	
+		ArrayList<String> data = getData.getdataExcel("put_data", "tc1");	
 		String Name = data.get(2);
 		String Job = data.get(3); 
 		String reqBody="{\r\n"

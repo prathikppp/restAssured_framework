@@ -18,11 +18,11 @@ public class Patch_req_repository {
 		return resource;
 		
 	}
-	public static String patch_req_tc1() throws IOException
+	public static String patch_req_tc1() throws IOException 
 	{
-		ArrayList<String> data = getData.getdataExcel("patch_data", "tc2");	
+		ArrayList<String> data = getData.getdataExcel("patch_data", "tc1");	
 		String Name = data.get(2);
-		String Job = data.get(3); 
+		String Job = data.get(3);
 		String reqBody="{\r\n"
 				+ "    \"name\": \""+Name+"\",\r\n"
 				+ "    \"job\": \""+Job+"\"\r\n"

@@ -33,7 +33,7 @@ public class post_tc1
 		    }
 		    else
 		    {
-		    	//System.out.println("correct status code is not found in the iteration " + i);
+		    	System.out.println("correct status code is not found in the iteration " + i);
 		    	
 		    }
 	    }

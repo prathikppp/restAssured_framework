@@ -2,12 +2,15 @@ package Test_class;
 
 import java.io.IOException;
 import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import Common_method.commonMethodUtility;
 import Common_method.commonMethod_Get_API;
 import Req_repository.Get_req_repository;
 import io.restassured.path.json.JsonPath;
 
 public class Get_tc1 {
+	@Test
 	public static void orchestrator() throws IOException
 	{
 		String resbody="";
