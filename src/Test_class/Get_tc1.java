@@ -24,7 +24,7 @@ public class Get_tc1 {
 		
 		
 		// changes to branch 
-		System.out.println("b2 merge into master without 2 changes");
+		System.out.println("merge into master without pushig to master");
 		
 		for(int i=0; i<5; i++)
 		{
