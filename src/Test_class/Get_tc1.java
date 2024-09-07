@@ -20,7 +20,7 @@ public class Get_tc1 {
 		
 		// changes
 		System.out.println("add 1");
-		
+		System.out.println("add 1")
 		
 		for(int i=0; i<5; i++)
 		{
