@@ -23,7 +23,7 @@ public class Get_tc1 {
 		System.out.println("add 2");
 		
 		
-		// chenges to branch 
+		// changes to branch 
 		System.out.println("b1 test");
 		
 		for(int i=0; i<5; i++)
