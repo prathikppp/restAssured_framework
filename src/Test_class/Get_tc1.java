@@ -18,6 +18,10 @@ public class Get_tc1 {
 		String baseuri=Get_req_repository.baseuri();
 		String reource=Get_req_repository.resource();
 		
+		// changes
+		System.out.println("add 1");
+		
+		
 		for(int i=0; i<5; i++)
 		{
 			res_status_code =commonMethod_Get_API.responsestatuscode(baseuri, reource);
