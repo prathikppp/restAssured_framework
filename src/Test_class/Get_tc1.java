@@ -22,6 +22,10 @@ public class Get_tc1 {
 		System.out.println("add 1");
 		System.out.println("add 2");
 		
+		
+		// chenges to branch 
+		System.out.println("b1 test");
+		
 		for(int i=0; i<5; i++)
 		{
 			res_status_code =commonMethod_Get_API.responsestatuscode(baseuri, reource);
