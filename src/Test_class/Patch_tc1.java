@@ -15,6 +15,7 @@ public class Patch_tc1 {
 	@Test
 	public static void orchestrator() throws IOException
 	{
+		System.out.println("test1 conflicts");
 		String resbody="";
 		int res_status_code=0;
 		String baseuri=Patch_req_repository.baseuri();
