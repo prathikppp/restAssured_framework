@@ -20,7 +20,7 @@ public class Get_tc1 {
 		
 		// changes
 		System.out.println("add 1");
-		System.out.println("add 2");
+		
 		
 		
 		// changes to branch 
