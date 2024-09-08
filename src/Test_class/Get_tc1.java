@@ -26,6 +26,7 @@ public class Get_tc1 {
 		// changes to branch 
 		System.out.println("b1 test");
 		System.out.println("conflicts3  test");
+
 		for(int i=0; i<5; i++)
 		{
 			res_status_code =commonMethod_Get_API.responsestatuscode(baseuri, reource);
