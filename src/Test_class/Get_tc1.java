@@ -20,12 +20,14 @@ public class Get_tc1 {
 		
 		// changes
 		System.out.println("add 1");
-		System.out.println("add 2");
+		
 		
 		
 		// changes to branch 
-		System.out.println("merge into master without pushig to master");
+		System.out.println("main change");
+		System.out.println("main change2");
 		
+
 		for(int i=0; i<5; i++)
 		{
 			res_status_code =commonMethod_Get_API.responsestatuscode(baseuri, reource);
